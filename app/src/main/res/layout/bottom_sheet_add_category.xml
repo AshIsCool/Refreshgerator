@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/corner_radius">
+
+    <!-- EditText for entering the new category name -->
+    <EditText
+        android:id="@+id/editTextCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_below="@+id/btnSaveCategory"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        />
+
+    <!-- Button to save the category -->
+    <TextView
+        android:id="@+id/btnSaveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#089A54"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+
+    <TextView
+        android:id="@+id/btnCancelCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="#a1a1a1"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+</RelativeLayout>

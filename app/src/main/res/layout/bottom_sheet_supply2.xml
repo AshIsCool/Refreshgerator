@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/corner_radius"
+    >
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- Shelf Life -->
+    <TextView
+        android:id="@+id/shelf_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shelf Life"
+        android:textSize="14sp"
+        android:paddingBottom="16dp" />
+
+
+    <TextView
+        android:id="@+id/item_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/item_poday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Poday"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        />
+
+    <!-- Deadline Start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_text"
+            android:text="Purchased   "
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Date"
+            android:hint="Select Start Date"
+            android:padding="8dp"
+            android:clickable="true"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_text"
+            android:text="Deadline      "
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Date"
+            android:hint="Auto-calculated"
+            android:padding="8dp"
+             />
+
+
+    </LinearLayout>
+
+    <!-- Follow Toggle Button -->
+    <ToggleButton
+        android:id="@+id/follow_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Followed"
+        android:textOff="Follow"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        />
+
+    <!-- Open Toggle Button -->
+    <ToggleButton
+        android:id="@+id/open_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Opened"
+        android:textOff="Open"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_supply_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#089A54"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

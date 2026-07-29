@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/corner_radius">
+    >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="New Product"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <Button
+    android:id="@+id/btnSaveProduct"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="Save"
+    android:textAllCaps="false"
+    android:textColor="@color/green"
+    android:layout_alignParentRight="true"
+    android:background="#00000000"
+    />
+
+</RelativeLayout>
+
+
+
+    <!-- Input field for Product Name -->
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Storage : "
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        />
+
+    <!-- RadioGroup for Storage Type -->
+    <RadioGroup
+        android:id="@+id/rgStorageType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/rbFromPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Purchase"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rbFromMade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Made"
+            android:textSize="15dp"
+            />
+        <RadioButton
+            android:id="@+id/rbGoodUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Until"
+            android:textSize="15dp"
+            />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <!-- Input field for Shelf Life -->
+
+
+        <TextView
+            android:id="@+id/txt_shelfi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Shelf Life : "
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/etShelfLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_background"
+            android:hint="Days"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Opening Shelf LIfe : "
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        />
+
+
+
+    <!-- Input field for Production Day -->
+    <EditText
+        android:id="@+id/etPoDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Days"
+        android:inputType="number"
+        android:background="@drawable/edit_background"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginRight="15dp"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    </RelativeLayout>
+
+
+
+
+    <!-- Input field for Production Hour -->
+    <EditText
+        android:id="@+id/etPoHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Hour"
+        android:inputType="number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/edit_background"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        android:textSize="15dp"
+        android:visibility="gone"
+        />
+
+    <!-- Input field for Production Minute -->
+    <EditText
+        android:id="@+id/etPoMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Minute"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number"
+        android:background="@drawable/edit_background"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        android:textSize="15dp"
+        android:visibility="gone"
+        />
+
+
+
+    <!-- RadioGroup for Import Date -->
+    <RadioGroup
+        android:id="@+id/rgImportDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <RadioButton
+            android:id="@+id/rbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1" />
+        <RadioButton
+            android:id="@+id/rbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2" />
+        <RadioButton
+            android:id="@+id/rbOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3" />
+    </RadioGroup>
+
+    <!-- Input field for Notes -->
+    <EditText
+        android:id="@+id/etNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- Save Button -->
+
+</LinearLayout>

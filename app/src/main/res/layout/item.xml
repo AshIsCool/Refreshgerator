@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/category_display_item"
+    android:paddingLeft="10dp"
+    >
+
+    <!-- ImageView for category icon -->
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="12dp"
+
+         /> <!-- Set to "gone" initially -->
+
+    <!-- TextView for category name -->
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Category Name"
+        android:textSize="16sp"
+        android:padding="12dp"
+        />
+
+    <!-- ImageView for delete icon (only visible for non-predefined categories) -->
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/delete"
+        android:background="@drawable/delete_background"
+        android:visibility="gone"
+        android:padding="10dp"
+         />
+</LinearLayout>

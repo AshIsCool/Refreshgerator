@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/category_display_item"
+
+    >
+<TextView
+android:id="@+id/product_name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Product Name"
+android:textStyle="bold"
+android:textSize="16sp"
+    android:layout_marginLeft="15dp"
+    />
+
+<TextView
+android:id="@+id/product_shelf_life"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Shelf Life"
+android:textSize="14sp"
+android:layout_marginTop="4dp"
+    android:layout_marginLeft="15dp"
+    />
+
+</LinearLayout>

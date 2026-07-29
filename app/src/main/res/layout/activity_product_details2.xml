@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_img"
+    >
+
+
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supply Details"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/top_header" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_margin="15dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/shelf_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shelf Life"
+        android:textSize="14sp"
+        android:paddingBottom="16dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        >
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_text"
+
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Date"
+            android:hint="Select Start Date"
+            android:padding="8dp"
+            android:clickable="false"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_text"
+            android:text="Deadline      "
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Date"
+            android:hint="Auto-calculated"
+            android:padding="8dp"
+            android:clickable="false"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <ToggleButton
+        android:id="@+id/follow_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Followed"
+        android:textOff="Follow"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <!-- Open Toggle Button -->
+    <ToggleButton
+        android:id="@+id/open_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Opened"
+        android:textOff="Open"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_weight="1"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_weight="1"
+        android:backgroundTint="#EA3131"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    </LinearLayout>
+</LinearLayout>

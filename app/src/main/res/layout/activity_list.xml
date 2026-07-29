@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List_Activity"
+    android:background="@drawable/back_img">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/top_header" />
+
+    <!-- Add Button -->
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        />
+
+    <!-- Top Buttons -->
+    <LinearLayout
+        android:id="@+id/button_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/text_head">
+
+        <Button
+            android:id="@+id/btnSupply"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Supply"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/btnToBuy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="To Buy"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="12dp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@id/button_menu"
+        android:layout_above="@id/navigation_bar"
+        android:layout_marginLeft="15dp"
+        android:layout_margin="15dp"
+        android:scrollbars="none"
+
+        />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bottom"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/nb_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/product_icon2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_supply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/suplly_icon_navi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supplies"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/button_back"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/list_icon2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/settings_icon_navi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

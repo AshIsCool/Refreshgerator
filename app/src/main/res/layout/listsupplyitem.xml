@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="@drawable/category_display_item">
+
+    <!-- Checkbox for selection -->
+    <CheckBox
+        android:id="@+id/itemCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+
+        />
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/itemCheckbox"
+        android:layout_marginLeft="10dp"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Shelf Life -->
+    <TextView
+        android:id="@+id/tvShelfLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvItemName"
+        android:layout_toRightOf="@id/itemCheckbox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Shelf Life"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- To Buy Button -->
+    <Button
+        android:id="@+id/btnToBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Buy"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:textColor="@color/green" />
+</RelativeLayout>

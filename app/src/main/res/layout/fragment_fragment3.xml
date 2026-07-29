@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment3"
+    android:background="#00FFFFFF"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_mat_1"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/supply_img"
+            android:layout_below="@+id/subText"
+            android:layout_above="@id/rel1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUPPLY"
+            android:gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="10dp"
+            android:text="Track your stock and shelf life by listing what you've bought, with notifications for expiry dates and options to mark unpacking dates. Create multiple items with varied dates and save regularly purchased items to remember when to restock"
+            android:layout_marginLeft="15dp"
+            android:textColor="#B3FFFFFF"
+            android:textSize="14dp"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <Button
+                android:id="@+id/nxt_screen_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to the next screen"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_shape_1"
+                android:backgroundTint="#089A54"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close intro"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_shape_1"
+                android:backgroundTint="#34A1A1A1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/nxt_screen_btn"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

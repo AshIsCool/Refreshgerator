@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplyActivity"
+    android:background="@drawable/back_img"
+    >
+
+
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_header"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Supply"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+
+
+
+    <!-- Add Button -->
+
+
+    <!-- Horizontal ScrollView for Categories -->
+    <HorizontalScrollView
+        android:id="@+id/categoryScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/categoryLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            />
+    </HorizontalScrollView>
+
+    <!-- Placeholder TextView for No Items -->
+
+
+
+    <LinearLayout
+        android:id="@+id/tvNoItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/noitem_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don’t have a products in this category"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:layout_marginTop="8dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <!-- ListView for Items -->
+    <ListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_bar"
+        android:layout_below="@id/categoryScrollView"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:dividerHeight="12dp"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    
+
+
+
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bottom"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/nb_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/product_icon2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_supply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/button_back"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/suplly_icon2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supplies"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/list_icon_navi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nb_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/settings_icon_navi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#a1a1a1"
+                android:gravity="center"
+                android:textSize="12dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

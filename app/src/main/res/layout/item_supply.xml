@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/category_display_item"
+    >
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Date: 2024-11-13"
+        android:textSize="14sp" />
+
+    <!-- Add missing TextViews -->
+    <TextView
+        android:id="@+id/item_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage: From Purchase"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/item_poday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Poday: 0"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+</LinearLayout>
